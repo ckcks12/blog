@@ -151,6 +151,10 @@ hr {
   list-style: none;
 }
 
+.posts h1 {
+  line-height: 2.25rem;
+}
+
 .post-date {
   display: block;
   margin-top:3px;
