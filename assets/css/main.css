@@ -39,6 +39,7 @@ body {
 
 h1{
   font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 h1 a {
@@ -149,10 +150,6 @@ hr {
   margin-bottom: 5rem;
   padding: 0px;
   list-style: none;
-}
-
-.posts h1 {
-  line-height: 2.25rem;
 }
 
 .post-date {
