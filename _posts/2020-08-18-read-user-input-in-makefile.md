@@ -16,13 +16,13 @@ build:
 # Explain
 `make` has own syntax for variable.
 
-|Example|`make` -> `shell`|
-|-|-|
+|Example|`make`|`shell`|Result|
+|-|-|-|-|
 |var=test||
-|echo $(var)|echo test|
-|echo $var|echo test|
-|echo ${var}| echo |
-|echo $$var| echo $var|
+|echo $(var)|echo|echo||
+|echo $var|echo|echo||
+|echo ${var}|echo|echo||
+|echo $$var|echo $var|echo test|test|
 
-A doubled dollar($$) sign becomes a single dollar($). Just like a backslash(\).
+A doubled dollar($$) sign becomes a single dollar($). Just like a backslash(\\).
 `make` has its own **variable syntax**. It interpretes with values from `-e` arguments.
