@@ -1,6 +1,6 @@
 ---
 layout: post
-title: read user input in makefile
+title: How To Read User Input in Makefile
 author: Eunchan Lee
 tags: ["programming", "make", "build", "ci/cd"]
 ---
