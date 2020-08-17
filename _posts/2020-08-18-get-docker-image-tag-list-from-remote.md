@@ -20,4 +20,4 @@ So I wanted to print out image tags in my cli or somewhere so that I could track
 ![img](https://user-images.githubusercontent.com/12825679/90426703-78208900-e0fc-11ea-938f-cb5edbe1e073.png)
 
 # Docker v2 api
-You can find it in official page: https://docs.docker.com/registry/spec/api/
+You can find it in official page: [https://docs.docker.com/registry/spec/api/](https://docs.docker.com/registry/spec/api/)
