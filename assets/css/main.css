@@ -161,6 +161,10 @@ hr {
   font-size:0.8rem;
 }
 
+.post-container > .post-date { /* post page post date */
+  margin-bottom: 5rem;	
+}
+
 @media (max-width: 30rem) {
   .posts h1 {
     font-size: 1.5rem;
