@@ -30,7 +30,7 @@ func main() {
 }
 ```
 ### main.kt
-```kt
+```kotlin
 fun main() {
    var s = 0
    for (i in 0..2147483646) {
