@@ -5,6 +5,16 @@ author: Eunchan Lee
 tags: [programming,go,java,kotlin,performance]
 ---
 
+
+# Result
+
+|Language|Compile|Execution|File Size|JVM Required|
+|:-|-:|-:|-:|:-:|
+|Go|0.11s|0.55s|1.1M|X|
+|Java(by kotlinc)|5.51s|1.15s|691B|O|
+|Kotlin Native|12.46s|2.85s|912K|X|
+
+
 # Source
 ### main.go
 ```go
@@ -30,13 +40,6 @@ fun main() {
    println(s)
 }
 ```
-
-# Result
-|Language|Compile|Execution|File Size|JVM Required|
-|:-|-:|-:|-:|:-:|
-|Go|0.11s|0.55s|1.1M|X|
-|Java(by kotlinc)|5.51s|1.15s|691B|O|
-|Kotlin Native|12.46s|2.85s|912K|X|
 
 # Why? Why is it **super** slower than others?
 Well, I don't know 😅 How do I know that?
