@@ -41,6 +41,18 @@ fun main() {
 }
 ```
 
+# Build
+```bash
+# go
+go build main.go
+
+# java by kotlinc
+kotlinc main.kt
+
+# kotlin native
+kotlinc-native main.kt
+```
+
 # Why? Why is Kotlin *super* slower than others?
 Well, I don't know 😅 How do I know that?
 
