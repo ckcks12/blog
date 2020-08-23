@@ -41,7 +41,7 @@ fun main() {
 }
 ```
 
-# Why? Why is Kotlin **super** slower than others?
+# Why? Why is Kotlin *super* slower than others?
 Well, I don't know 😅 How do I know that?
 
 Kotlin Native requires XCode CLI. Also compiler downloads a lot of dependencies the first time it runs. 
