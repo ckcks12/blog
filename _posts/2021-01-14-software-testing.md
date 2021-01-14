@@ -46,7 +46,7 @@ For CRUD, let's assume we're going to test **Read from DB** feature. Code would 
 
 3. Mock Nothing
 
-    Mock Nothing means that just use the services out there. They could be dev, alpha and even production environment. In the case of production environemtn, it acts just like monitoring test. It's also fully funcitoning services and easier than Mock DB. However it runs on full set of environment and there might be problems somewhere not our code. 
+    Mock Nothing means that just use the services out there. They could be dev, alpha and even production environment. In the case of production environment, it acts just like monitoring test. It's also fully funcitoning services and easier than Mock DB. However it runs on full set of environment and there might be problems somewhere not our code. 
 
     Pros:
 
