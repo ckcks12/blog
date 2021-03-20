@@ -206,7 +206,7 @@ maxUnavailable 을 25% 로 잡아서 4번의 Rolling 이 일어난다고 하면
 
 그래서 나는 Terraform 에서 object for_each 를 통해 모듈을 만들어 아래와 같이 사용했다. 
 
-```hcl
+```
   worker_additional_groups = {
     "webapp" = {
       name             = "webapp"
