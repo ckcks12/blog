@@ -56,11 +56,11 @@ node 는 lb 에 못붙으니 unhealthy 로 죽고.. 이게 무한반복... ㅎ�
 
 ## 장애 기사가 나다
 
-![] (https://i.imgur.com/HodQNWG.png)
+![](https://i.imgur.com/HodQNWG.png)
 
 이 장애는 좀 특별하다. 바로 장애가 기사로 나왔기 때문이다. 
 
-https://www.asiatoday.co.kr/view.php?key=20200622001719216
+[기사](https://www.asiatoday.co.kr/view.php?key=20200622001719216)
 
 흑흑.. 
 

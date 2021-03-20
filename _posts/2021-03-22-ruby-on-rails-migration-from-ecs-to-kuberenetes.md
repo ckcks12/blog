@@ -9,7 +9,7 @@ categories: [software,kubernetes,eks,ecs]
 
 우리 회사 메인 웹서버는 Ruby On Rails 로 되어 있다.
 
-Dokerize 되어 ECS 에서 돌고 있다.
+Dockerize 되어 ECS 에서 돌고 있다.
 
 환경 변수는 모두 SSM 으로 되어 있었다.
 
