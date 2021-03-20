@@ -193,3 +193,13 @@ AWS SSM Parameter Store 에서 값을 바꾸어도 쿠베엔 반영되지 않았
 
 sns 로 리스닝하고 관련된 key 값이 있는 CRD 를 retouch 해주면 될 것 같다
 
+
+## AWS - Elasticache Redis Memory Usage Percentage
+
+레디스 남은 메모리 용량은 CW의 Freeable Memory 지표로는 못가져온다 (부정확함
+
+이를 위해 Datadog Agent 를 따로 연결하여 계산하고 그랬다
+
+그 작업을 한지 이틀만엔가 AWS 에서 새로운 지표를 지원해줬다 🤯
+
+계속 변하는 AWS , 계속 공부해야한다
