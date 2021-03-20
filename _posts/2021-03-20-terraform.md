@@ -13,10 +13,13 @@ categories: [software,internship]
 
 Terraform 으로 관리하던 Cloudwatch Schedule Task 를 UI 로 관리하기 위해서 였다. (200개가 넘어 테라폼으로 할때 꽤 힘드셨다고 한다)
 
+그리고 만든 결과물은 아래와 같다.
+
+![img](https://i.imgur.com/Trtbop6.png)
 
 ## Terraform 과 AWS
 
-[img](https://i.imgur.com/Qfvee9e.png)
+![img](https://i.imgur.com/Qfvee9e.png)
 
 당연히 나는 Terraform, AWS 가 둘다 처음이었다.
 
