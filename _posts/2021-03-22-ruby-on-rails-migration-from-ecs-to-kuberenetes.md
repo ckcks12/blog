@@ -140,7 +140,7 @@ ALB 를 만들어내고 룰 설정을 만들어내야 했고 또 Pod 를 Target 
 
 다행히 ALB Operator 가 있었다. 그래서 사용하는 도중 아래와 같은 고통이 있었다.
 
-1. Annotation 에 ALB Rule 을 JSON 으로 때려박기
+#### 1. Annotation 에 ALB Rule 을 JSON 으로 때려박기
 
 이때 문제는 디버깅이었다. JSON 문법 실수(",} 등 빼뜨리기)나 ALB Rule 에서 지원하지 않는 Attribute 를 사용할 때 ALB Controller 는 오류를 내뱉었다.
 
@@ -156,7 +156,7 @@ Operator 패턴이 큰규모, 대규모적인 인프라 관리에 적합한지 �
 
 어찌됐든 회사 일인데 시력을 포기하며 일해서 ALB Rule JSON 디버깅을 마쳤다. 그리고 지하철 역 안내 문구가 잘 보이지 않게 되었다. 진짜 슬펐다.
 
-2. ALB 중간에 오류 났을 때 중간 리소스들이 미아가 된다.
+#### 2. ALB 중간에 오류 났을 때 중간 리소스들이 미아가 된다.
 
 ALB Controller 가 Reconcile 할때 LB 생성 후 Subnet 찾아서 Target Group 생성하고 Rule 을 생성한다.
 
@@ -168,7 +168,7 @@ ALB Controller 가 Reconcile 할때 LB 생성 후 Subnet 찾아서 Target Group 
 
 다행히 ALB 버젼 2.0 에서는 해결되었다고 한다 ^^
 
-3. (Kubernetes 보다) 느린 배포
+#### 3. (Kubernetes 보다) 느린 배포
 
 새로운 Pod 이 떴을 때 ALB Controller 가 Kubernetes Event Stream 으로 부터 신호를 받고 AWS API 를 호출하고 이제 이를 Deregsier/Register 하는데에 걸리는 시간이 순수 Kubernetes 의 Rolling Update 에 비해 느렸다.
 
