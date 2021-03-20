@@ -146,6 +146,10 @@ hr {
   margin-bottom: 4rem;
 }
 
+.post-container a {
+  text-decoration: underline;
+}
+
 .posts {
   margin-bottom: 2rem;
   padding: 0px;
