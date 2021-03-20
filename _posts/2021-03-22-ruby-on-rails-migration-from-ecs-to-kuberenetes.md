@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 웹앱(Roby On Rails) ECS - Kubernetes 마이그레이션
+title: 웹앱(Ruby On Rails) ECS - Kubernetes 마이그레이션
 author: Eunchan Lee
 categories: [software,kubernetes,eks,ecs]
 ---
