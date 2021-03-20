@@ -16,7 +16,7 @@ Terraform 으로 관리하던 Cloudwatch Schedule Task 를 UI 로 관리하기 �
 
 ### Terraform 과 AWS
 
-[img]https://i.imgur.com/Qfvee9e.png[/img]
+[img](https://i.imgur.com/Qfvee9e.png)
 
 당연히 나는 Terraform, AWS 가 둘다 처음이었다.
 
