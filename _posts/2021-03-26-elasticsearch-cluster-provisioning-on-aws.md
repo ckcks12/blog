@@ -245,4 +245,36 @@ resource "aws_launch_template" "lt" {
 만약 원하시는 분이 계시다면 라이브러리화 해서 Github 에 올려볼게요!
 
 
+# EC2 Provider 로 Cluster Scale out 쉽게 하기
 
+```
+# --------------------------------- Discovery ----------------------------------
+discovery.seed_providers: ec2
+discovery.ec2.host_type: private_ip
+discovery.ec2.endpoint: ec2.${region}.amazonaws.com
+discovery.ec2.tag.Cluster: ${cluster_name}
+discovery.ec2.groups: ${security_groups}
+discovery.ec2.any_group: false
+
+cloud.node.auto_attributes: true
+cluster.routing.allocation.awareness.attributes: aws_availability_zone
+```
+
+`elasticsearch.yml` 에 위와 같이 EC2 Discovery 를 넣어주면
+Cluster 태그를 통해서 같은 cluster name 을 찾아 join 합니다.
+
+이때 주의하실 점은 최초의 Cluster 생성해낼 때 Seed 와 같은 개념을 응용하셔서 head split 을 막으셔야합니다.
+
+head split 으로 말씀 드린 것은 같은 cluster name 인데 다른 cluster uuid 를 가지고 있는 경우 입니다.
+
+그래서 저는 아예 클러스터 구성으로 seed, master, data, coordinate 를 조합하여 seed 를 하나만 띄운 뒤 
+
+Terraform 의 `depends_on` 등으로 순서를 최대한 맞췄습니다.
+
+물론 strict 하게 provisioning 순서 까지 맞출 필요는 없습니다.
+
+ES 설정의 `initial_master_nodes` 로 자기 자신을 지정하면 그 친구가 cluster uuid 를 만들어내는 seed 역할을 하구요.
+
+그 외에는 설령 master role 을 가지고 있다 하여도 `initial_master_nodes` 를 [] 로 주시면 됩니다.
+
+알아서 master: true 로 cluster join 하게 되면 master eligible 로 되니까 상관 없어요 ㅎㅎ
