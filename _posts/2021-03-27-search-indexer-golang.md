@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 검색 색인기 Search Indexer 개발기
+title: 검색 색인기 Search Indexer 고언어 Golang 개발기
 author: Eunchan Lee
-categories: [software,aws,es,elasticsearch,search,indexer,indexing]
+categories: [software,aws,es,elasticsearch,search,indexer,indexing,go,golang]
 ---
 
 # 검색 색인기(Indexer)가 하는 일
